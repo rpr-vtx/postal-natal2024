@@ -10,21 +10,38 @@
     <header style="display:none">
         <h1>Este Natal, testámos tudo... e só temos boas notícias para partilhar!</h1>
     </header>
-
-    <div id="ball-container">
-        <img src="https://static.vecteezy.com/system/resources/previews/014/342/596/large_2x/christmas-pine-tree-snow-watercolor-png.png" id="tree" class="tree-bg" alt="Árvore de natal"/>
+    <div style="position: absolute; float: left; width: 10vw; padding: 1vh 1vw;">
+        <!-- logo -->
+        <a href="https://www.vtxrm.com/"><img src="https://www.vtxrm.com/wp-content/themes/estreia/media/logo_vtxrm.png" id="logoLink" alt="VTXRM - Software Factory" aria-label="Open homepage" style="opacity: 1; width: 100%;"></a>
     </div>
 
+	<div>
+        <img src="arvore.png" id="tree" class="tree-bg" alt="Árvore de natal"/>
+		<div id="ball-container">
+		</div>
+	</div>
+
+    <div class="snowflakes">
+        <div class="snowflake" style="left: 16vw">*</div>
+        <div class="snowflake" style="left: 36vw">*</div>
+        <div class="snowflake" style="left: 48vw">*</div>
+        <div class="snowflake" style="left: 66vw">*</div>
+        <div class="snowflake" style="left: 86vw">*</div>
+    </div>
 
     <div class="modal" id="modal">
         <span class="close" id="close">&times;</span>
         <img src="" alt="Modal Image" id="modalImage">
     </div>
 
-    <div class="snowflakes">
-        <div class="snowflake" style="left: 16vw">*</div>
-        <div class="snowflake" style="left: 46vw">*</div>
-        <div class="snowflake" style="left: 76vw">*</div>
+    <div style="position: absolute; top: 0; right: 0; padding: 1vh 1vw;">
+        <div class="audioContainer">
+            <!-- Audio Element -->
+            <audio id="myAudio" src="TestsInChristmas.mp3" preload="auto" loop></audio>
+
+            <!-- Toggle Button -->
+            <button id="toggleButton">There's music to play, decorations to click!</button>
+        </div>
     </div>
 
     <main style="display:none">
@@ -34,7 +51,7 @@
         </div>
     </main>
 
-    <footer>
+    <footer style="display:none">
         <p>Feliz Natal e um Ano Novo repleto de conquistas!<br>
         <strong>- Equipa de Testes</strong></p>
         <small>© 2023 Equipa de Testes</small>
